@@ -7,7 +7,7 @@
 #' @param module Module to extract from fastqc_data.txt file
 #' @return A data_frame with fastqc report values for the queried module
 #' @examples
-#' read_fastqc("fastqc_data.txt", "Sequence Length Distribution")
+#' # read_fastqc("fastqc_data.txt", "Sequence Length Distribution")
 #' @export
 read_fastqc <- function(file, module = "Basic Statistics") {
 

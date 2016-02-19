@@ -18,6 +18,6 @@ A data_frame of modules available in a fastqc_data.txt report and their report s
 \code{get_fastqc_modules} lists avaialble analysis modules from a fastqc report
 }
 \examples{
-get_fastqc_modules("fastqc_data.txt")
+# get_fastqc_modules("fastqc_data.txt")
 }
 

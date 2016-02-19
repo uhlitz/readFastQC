@@ -6,7 +6,7 @@
 #' @param report_linenumbers FALSE by default
 #' @return A data_frame of modules available in a fastqc_data.txt report and their report status
 #' @examples
-#' get_fastqc_modules("fastqc_data.txt")
+#' # get_fastqc_modules("fastqc_data.txt")
 #' @export
 get_fastqc_modules <- function(file, report_linenumbers = F) {
 

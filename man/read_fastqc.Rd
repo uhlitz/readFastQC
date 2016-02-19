@@ -19,6 +19,6 @@ A data_frame with fastqc report values for the queried module
 a quality control tool for high throughput sequence data.
 }
 \examples{
-read_fastqc("fastqc_data.txt", "Sequence Length Distribution")
+# read_fastqc("fastqc_data.txt", "Sequence Length Distribution")
 }
 
