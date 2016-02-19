@@ -1,0 +1,21 @@
+Package: readFastQC
+Type: Package
+Title: Read in FastQC reports
+Version: 0.1.0
+Authors@R: person("Florian", "Uhlitz", email = "uhlitz@hu-berlin.de",
+  role = c("aut", "cre"))
+Description: readFastQC reads in fastqc_data.txt files reported by fastqc,
+    a quality control tool for high throughput sequence data
+    (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+License: GPL-3 + file LICENSE
+URL: uhlitz.github.io/readFastQC
+BugReports: https://github.com/uhlitz/readFastQC/issues
+LazyData: TRUE
+Imports:
+    magrittr,
+    dplyr,
+    tidyr,
+    readr,
+    stringr,
+    ggplot2
+RoxygenNote: 5.0.1
