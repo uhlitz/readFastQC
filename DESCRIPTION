@@ -19,3 +19,7 @@ Imports:
     stringr,
     ggplot2
 RoxygenNote: 5.0.1
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

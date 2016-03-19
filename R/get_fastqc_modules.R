@@ -11,19 +11,19 @@
 get_fastqc_modules <- function(file, report_linenumbers = F) {
 
   file %>%
-    readr::read_lines() %>%
-    stringr::str_detect(">>END") %>%
+    read_lines() %>%
+    str_detect(">>END") %>%
     which %>%
-    {dplyr::data_frame(start = c(1, .)+1,
-                       stop = dplyr::lead(start)-3,
-                       module = readr::read_lines(file)[start] %>%
-                         stringr::str_replace_all(">>", ""))} %>%
+    {data_frame(start = c(1, .)+1,
+                       stop = lead(start)-3,
+                       module = read_lines(file)[start] %>%
+                         str_replace_all(">>", ""))} %>%
     head(-1) %>%
-    tidyr::separate(module, into = c("module", "status"), sep = "\t") ->
+    separate(module, into = c("module", "status"), sep = "\t") ->
     fastqc_coord
 
   if(missing(report_linenumbers) | report_linenumbers == F) {
-    fastqc_coord <- fastqc_coord %>% dplyr::select(module, status)
+    fastqc_coord <- fastqc_coord %>% select(module, status)
   } else {
     fastqc_coord <- fastqc_coord
   }
